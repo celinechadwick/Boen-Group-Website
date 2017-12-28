@@ -87,6 +87,8 @@ render() {
             <p className="text-center lead" style={{lineHeight:'2', fontSize:'1.2rem', color:'#275c81'}}>
               Measure effectiveness in achieving positive outcomes for individuals served by publicly funded programs, such as the Workforce Innovation and Opportunity Act (WIOA)  and other state and  local programs
             </p>
+            <button type="button" className="btn btn-link d-md-none" style={{margin:'0 auto', display:'block'}}>Read More</button>
+
       </div>
       <div className='col-xs-12 col-md-6 hvr-curl-bottom-right card' style={{'border-style': 'none', padding:'3%', margin:'20px', maxWidth:'420px', maxHeight:'625px',backgroundColor:'white'}}>
       <img src='./assets/compareicon.svg'  alt="" style={{width:'100px',display:'block', margin:'60px auto 30px'}}/>
@@ -94,6 +96,7 @@ render() {
             <p className="text-center lead" style={{lineHeight:'2', fontSize:'1.2rem', color:'#275c81'}}>
               Understand why certain program characteristics correlate with differences in outcomes and how to extract meaningful data from “apples to oranges” comparisons
             </p>
+            <button type="button" className="btn btn-link d-md-none" style={{margin:'0 auto', display:'block'}}>Read More</button>
       </div>
 
   </div>
@@ -107,6 +110,8 @@ render() {
                     <p className="text-center lead" style={{fontSize:'1.2rem', letterSpacing:'1px', color:'#275c81'}}>
                       Build profiles of participants served through career and training services
                     </p>
+                    <button type="button" className="btn btn-link d-md-none" style={{margin:'0 auto', display:'block'}}>Read More</button>
+
           </div>
 
           <div className="col-xs-12 col-lg-4 hvr-curl-bottom-right card" style={{'border-style': 'none',padding:'4%', margin:'20px',  maxWidth:'420px', maxHeight:'620px',  backgroundColor:'white'}}>
@@ -115,6 +120,8 @@ render() {
                 <p className="text-center lead" style={{fontSize:'1.2rem', letterSpacing:'1px', color:'#275c81'}}>
                   Extract information from data to predict trends and behavioral patterns
                 </p>
+                <button type="button" className="btn btn-link d-md-none" style={{margin:'0 auto', display:'block'}}>Read More</button>
+
           </div>
           <div className="col-xs-12 col-lg-4 hvr-curl-bottom-right card" style={{'border-style': 'none', padding:'4%', margin:'20px',  maxWidth:'420px', maxHeight:'650px',  backgroundColor:'white'}}>
             <img src='./assets/performanceicon.svg' alt="" style={{width:'100px',display:'block', margin:'100px auto 20px'}}/>
@@ -122,6 +129,8 @@ render() {
                 <p className="text-center lead" style={{fontSize:'1.2rem',letterSpacing:'1px', color:'#275c81'}}>
                   Evolve and improve training programs to upskill workers and improve retention by distilling outcomes within and across programs
                 </p>
+                <button type="button" className="btn btn-link d-md-none" style={{margin:'0 auto', display:'block'}}>Read More</button>
+
           </div>
 
       </div>

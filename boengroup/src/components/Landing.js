@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 const bannerStyle={
   'backgroundImage': 'url("assets/bannerdark.png")',
-   'backgroundColor': '',
+   'backgroundColor': '#102736',
    'backgroundRepeat': 'no-repeat',
    backgroundSize: 'cover',
-   backgroundPosition: '50% 50%',
-   minHeight:'20rem',
+   MsBackgroundSize: 'cover',
+  OBackgroundSize: 'cover',
+  MozBackgroundSize: 'cover',
+  WebkitBackgroundSize: 'cover',
+   backgroundPosition: '50% ',
+   minHeight:'25rem',
    maxHeight:'30rem',
 }
 
@@ -57,11 +61,13 @@ render() {
     </div>
     </nav>
 
+    <div style={{height:'80px', backgroundColor:'white'}}>
+    </div>
 
-    <div style={{marginTop:'70px'}}>
+    <div>
       <div className="row">
         <div className="col" style={bannerStyle}>
-          <img src="./assets/boenlogo.png" alt="" style={{minHeight:'40px', maxHeight:'90px', maxWidth:'98%',display:'block', margin:'6rem auto'}}/>
+          <img src="./assets/boenlogo.png" alt="" style={{margin:'auto',top:0,bottom:'0',left:0,right:0, position:'absolute', minHeight:'40px', maxHeight:'90px', maxWidth:'85%','opacity':'1'}}/>
         </div>
       </div>
     </div>
@@ -71,70 +77,104 @@ render() {
       <div className="row">
         <div className="col" style={{margin:'40px', padding:'3%'}}>
         <img src='./assets/datascienceicon.svg'  alt="" style={{width:'15rem',display:'block', margin:'10px auto 30px'}}/>
-        <p className='text-center lead font-italic' style={{fontSize:'2.3rem', color:'#0f2432', marginBottom:'25px'}}>Sharpen insights and drive outcomes with data analytics</p>
-          <p className='text-center font-italic lead' style={{color:'#137CB9', fontSize:'1.5rem', letterSpacing:'2px'}}>
-             Big Buford Data Analytics provides a complete picture of data across program by spotting performance trends and assessing impact
+          <p className='text-center lead font-italic' style={{fontSize:'2.3rem', color:'#0f2432', marginBottom:'25px'}}>
+            Sharpen Insights and Drive Outcomes with Visual Analytics
+          </p>
+          <p className='text-center font-italic lead' style={{color:'#137CB9', fontSize:'1.5rem', letterSpacing:'2px',lineHeight:'1.7'}}>
+             BG Data Analytics provides a complete picture of data across program
+             <br/> by spotting performance trends and assessing impact
           </p>
         </div>
       </div>
     </div>
 
-    <div className='container-fluid' style={{ padding:'5% 2%'}}>
+    <div className='container-fluid' style={{ padding:'2%'}}>
       <div className="row justify-content-sm-center">
-      <div className='col-xs-12 col-md-6 hvr-curl-bottom-right card' style={{'border-style': 'none', padding:'3%', margin:'20px', maxWidth:'420px', maxHeight:'625px', backgroundColor:'white'}}>
-        <img src='./assets/piecharticon.svg'  alt="" style={{width:'100px',display:'block', margin:'60px auto 30px'}}/>
-          <h2 className='text-center card-title' style={{marginBottom:'40px'}}>Discretionary Funding</h2>
-            <p className="text-center lead" style={{lineHeight:'2', fontSize:'1.2rem', color:'#275c81'}}>
-              Measure effectiveness in achieving positive outcomes for individuals served by publicly funded programs, such as the Workforce Innovation and Opportunity Act (WIOA)  and other state and  local programs
-            </p>
-            <button type="button" className="btn btn-link d-md-none" style={{margin:'0 auto', display:'block'}}>Read More</button>
 
-      </div>
-      <div className='col-xs-12 col-md-6 hvr-curl-bottom-right card' style={{'border-style': 'none', padding:'3%', margin:'20px', maxWidth:'420px', maxHeight:'625px',backgroundColor:'white'}}>
+      <div className='col-md-6 card' style={{'borderStyle': 'none', padding:'3%', margin:'20px', maxWidth:'500px', maxHeight:'675px',backgroundColor:'white'}}>
       <img src='./assets/compareicon.svg'  alt="" style={{width:'100px',display:'block', margin:'60px auto 30px'}}/>
           <h2 className='text-center card-title' style={{marginBottom:'40px'}}>Benchmarks of Good Performance</h2>
             <p className="text-center lead" style={{lineHeight:'2', fontSize:'1.2rem', color:'#275c81'}}>
               Understand why certain program characteristics correlate with differences in outcomes and how to extract meaningful data from “apples to oranges” comparisons
             </p>
-            <button type="button" className="btn btn-link d-md-none" style={{margin:'0 auto', display:'block'}}>Read More</button>
+            <div className='btn-light' style={{margin:'20px auto', display:'block', border:'.5px solid #275c81', letterSpacing:'1px', padding:'5px 20px', fontSize:'.85rem', color:'#275c81'}}>LEARN MORE</div>
       </div>
+
+        <div className="col-lg-6 card" style={{'borderStyle': 'none',padding:'4%', margin:'20px', maxWidth:'500px', maxHeight:'675px', backgroundColor:'white'}}>
+            <img src='./assets/performanceicon.svg'  alt="" style={{width:'100px',display:'block', margin:'100px auto 20px'}}/>
+              <h2 className='text-center card-title' style={{marginBottom:'30px'}}>Demographic Profile</h2>
+                <p className="text-center lead" style={{lineHeight:'2', fontSize:'1.2rem', color:'#275c81'}}>
+                  Build profiles of youth and adult participants served through career and training services by examining demographic characteristics.
+                </p>
+                <div className='btn-light' style={{margin:'20px auto', display:'block', border:'.5px solid #275c81', letterSpacing:'1px', padding:'5px 20px', fontSize:'.85rem', color:'#275c81'}}>LEARN MORE</div>
+        </div>
 
   </div>
     </div>
 
-        <div className='container-fluid' style={{lineHeight:'1.7', padding:'2% 2% 5%'}}>
-          <div className="row justify-content-sm-center" id='about'>
-              <div className="col-s-12 col-lg-4  hvr-curl-bottom-right card" style={{'border-style': 'none',padding:'4%', margin:'20px', maxWidth:'420px', maxHeight:'625px', backgroundColor:'white'}}>
-                <img src='./assets/groupicon.svg'  alt="" style={{width:'100px',display:'block', margin:'100px auto 20px'}}/>
-                  <h2 className='text-center card-title' style={{marginBottom:'30px'}}>Demographic</h2>
-                    <p className="text-center lead" style={{fontSize:'1.2rem', letterSpacing:'1px', color:'#275c81'}}>
-                      Build profiles of participants served through career and training services
-                    </p>
-                    <button type="button" className="btn btn-link d-md-none" style={{margin:'0 auto', display:'block'}}>Read More</button>
+        <div className='container-fluid' style={{lineHeight:'1.7', padding:'2%'}}>
+          <div className="row justify-content-sm-center">
 
-          </div>
-
-          <div className="col-xs-12 col-lg-4 hvr-curl-bottom-right card" style={{'border-style': 'none',padding:'4%', margin:'20px',  maxWidth:'420px', maxHeight:'620px',  backgroundColor:'white'}}>
-            <img src='./assets/predicticon.svg' alt="" style={{width:'100px', display:'block', margin:'100px auto 20px'}}/>
-              <h2 className='text-center card-title' style={{marginBottom:'30px'}}>Predictive</h2>
+          <div className="col-lg-6 card" style={{'borderStyle': 'none',padding:'3%', margin:'20px',  maxWidth:'500px', maxHeight:'675px',  backgroundColor:'white'}}>
+            <img src='./assets/graphup.svg' alt="" style={{width:'100px', display:'block', margin:'100px auto 20px'}}/>
+              <h2 className='text-center card-title' style={{marginBottom:'30px'}}>Predictive Analysis</h2>
                 <p className="text-center lead" style={{fontSize:'1.2rem', letterSpacing:'1px', color:'#275c81'}}>
                   Extract information from data to predict trends and behavioral patterns
                 </p>
-                <button type="button" className="btn btn-link d-md-none" style={{margin:'0 auto', display:'block'}}>Read More</button>
+                <div className='btn-light' style={{margin:'20px auto', display:'block', border:'.5px solid #275c81', letterSpacing:'1px', padding:'5px 20px', fontSize:'.85rem', color:'#275c81'}}>LEARN MORE</div>
 
           </div>
-          <div className="col-xs-12 col-lg-4 hvr-curl-bottom-right card" style={{'border-style': 'none', padding:'4%', margin:'20px',  maxWidth:'420px', maxHeight:'650px',  backgroundColor:'white'}}>
-            <img src='./assets/performanceicon.svg' alt="" style={{width:'100px',display:'block', margin:'100px auto 20px'}}/>
-              <h2 className='text-center card-title' style={{marginBottom:'30px'}}>Performance</h2>
+          <div className="col-lg-6 card" style={{'borderStyle': 'none', padding:'3%', margin:'20px',  maxWidth:'500px', maxHeight:'675px',  backgroundColor:'white'}}>
+            <img src='./assets/piecharticon.svg' alt="" style={{width:'100px',display:'block', margin:'100px auto 20px'}}/>
+              <h2 className='text-center card-title' style={{marginBottom:'30px'}}>Performance Dashboard</h2>
                 <p className="text-center lead" style={{fontSize:'1.2rem',letterSpacing:'1px', color:'#275c81'}}>
-                  Evolve and improve training programs to upskill workers and improve retention by distilling outcomes within and across programs
+                  Assess training and employment outcomes to report out to programs and institutional funders.
                 </p>
-                <button type="button" className="btn btn-link d-md-none" style={{margin:'0 auto', display:'block'}}>Read More</button>
+                <div className='btn-light' style={{margin:'20px auto', display:'block', border:'.5px solid #275c81', letterSpacing:'1px', padding:'5px 20px', fontSize:'.85rem', color:'#275c81'}}>LEARN MORE</div>
 
           </div>
 
       </div>
         </div>
+              <div className='container-fluid' id='about' style={{ padding:'4% 6% 2%', backgroundColor:'white'}}>
+                <div className="card justify-content-sm-center" style={{margin:'40px', padding:'5%'}}>
+                  <p className='text-center lead font-italic' style={{fontSize:'2.2rem', color:'#0f2432', marginBottom:'1%'}}>
+                    About Our Team
+                  </p>
+                    <p className='text-center lead' style={{color:'#275c81', fontSize:'1.35rem', letterSpacing:'2px', lineHeight:'1.7', padding:'4%'}}>
+                      We are economic and workforce development experts with successful track records building systems to link job seekers and employers in government,
+                      for-profit, and not-for-profit agencies. We know how hard it is to adequately staff a data collection and data analysis team AND a marketing team to translate raw data into success stories.
+                    </p>
+                </div>
+            </div>
+
+            <div className='container-fluid' style={{ padding:'0 3% 4%', backgroundColor:'white'}}>
+              <div className="row justify-content-sm-center">
+
+              <div className="col-md-6 card" style={{margin:'20px', padding:'5%', maxWidth:'600px'}}>
+                <p className='text-center lead font-italic' style={{fontSize:'2rem', color:'#0f2432', marginBottom:'5%'}}>
+                  We Help You Make Time for the Work that Matters
+                </p>
+                  <p className='text-center lead' style={{color:'#275c81', fontSize:'1.2rem', letterSpacing:'1.2px', lineHeight:'1.7', padding:'2.5%'}}>
+                    Workforce and economic development organizations are under constant pressure to serve more employers and jobseekers and to demonstrate ROI
+                    for funders and policy decision-makers. BG Data Analytics uses internal workforce training data to report out and visualize a complete picture
+                    of data across programs to improve service delivery to youth and adults who are seeking employment, or who are looking for training to build skills
+                    and advance in their careers.
+                  </p>
+              </div>
+
+              <div className="col-md-6 card" style={{margin:'20px', padding:'5%', maxWidth:'600px'}}>
+                <p className='text-center lead font-italic' style={{fontSize:'2rem', color:'#0f2432', marginBottom:'5%'}}>
+                Identify Patterns, Correlations and Other Insights
+                </p>
+                <p className='text-center lead' style={{color:'#275c81', fontSize:'1.2rem', letterSpacing:'1.2px', lineHeight:'1.7', padding:'2.5%'}}>
+                  We know from years of workforce development experience that leveraging multiple funding streams and reporting requirements puts a real
+                  strain on internal resources, making it hard to use data internally for learning and program management. BG Data Analytics can help identify
+                  patterns, correlations and other insights to help your organization communicate impact to funders and stakeholders.
+                </p>
+              </div>
+              </div>
+          </div>
 
       <div id='contact' className='text-center card-title text-white' style={{padding:'60px', backgroundColor:'#214e6d', height:'5%'}}>
             <img src='./assets/mail.png'  alt="" style={{width:'3rem', margin:'5% 2%'}} onClick={this.mailRedirect.bind(this)}/>
